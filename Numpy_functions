@@ -1,0 +1,12 @@
+import numpy as np
+print(np.ones(3))
+print(np.linspace(0,10,50))
+
+# create an identity matrix
+print(np.eye(4))
+
+# cerate matrix with random numbers
+print(np.random.rand(5,5))
+
+# randint function
+print(np.random.randint(1,100,10))

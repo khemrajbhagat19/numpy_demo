@@ -6,4 +6,30 @@ np.random.seed(101)
 
 df=p.DataFrame(randn(5,4),index='A B C D E'.split(),columns='W X Y Z'.split())
 
+#print(df)
+
+print(df['W']) # Printing only W column
+
+print(df.W)   # Printing only W column 2nd method
+
+# creating a new column
+df['new']=df['W']+df['Y']
 print(df)
+
+# deleting a coloumn
+df.drop('new',axis=1,inplace=True)
+print(df)
+
+# deleting a row\index
+df.drop('A',axis=0,inplace=True)
+print(df)
+
+# selecting rows
+print(df.loc(1)) # not sure
+
+print(df.iloc[2])
+
+print(df[df>0]) # prints all elements >0
+
+print(df['W']>0) # prints all elements >0 in W column
+

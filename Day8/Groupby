@@ -1,0 +1,10 @@
+import pandas as p
+
+data={'Company':['GOOG','GOOG','MSFT','MSFT','FB','FB'],'Person':['Sam','Charlie','Amy','Vanessa','Carl','Sarah'],'Sales':[200,130,232,676,985,324]}
+
+df=p.DataFrame(data)
+print(df)
+
+print(df.groupby('Company'))
+# not sure,error --> x=df.groupby('Company').mean()
+#   print(x)

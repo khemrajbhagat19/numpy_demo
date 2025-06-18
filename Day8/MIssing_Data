@@ -1,0 +1,18 @@
+import numpy as np
+import pandas as p
+
+from numpy.random import randn
+np.random.seed(101)
+
+df=p.DataFrame({'A':[1,2,np.nan],'B':[5,np.nan,np.nan],'C':[1,2,3]})
+
+print(df)
+
+print(df.dropna()) # drops nan(not a number), from dataframe
+
+print(df.dropna(axis=1)) # drops nan from an axis
+
+print(df.dropna(thresh=2))
+
+print(df.fillna(value='FILL VALUE')) # fills nan with given value
+

@@ -1,0 +1,21 @@
+import numpy as np
+import pandas as p
+
+from numpy.random import randn
+np.random.seed(101)
+
+df=p.DataFrame(randn(5,4),index='A B C D E'.split(),columns='W X Y Z'.split())
+
+
+df.reset_index()
+print(df)
+
+# adding new coloumn 
+new_ind=['CA', 'NY', 'WY', 'OR', 'CO']
+df['States']=new_ind
+print(df)
+
+# placing new coloum as 1st column
+df.set_index('States',inplace=True)
+print(df)
+

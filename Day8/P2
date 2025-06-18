@@ -1,0 +1,19 @@
+'''import numpy as np
+from scipy import minimize
+
+f=lambda x:x**2,3*x+2
+result=minimize(f,x0=0)
+print(result) '''
+
+from scipy import stats
+data=[2,4,6,8,10]
+
+mean=stats.tmean(data)
+std_dev=stats.tstd(data)
+
+pdf_val=stats.norm.pdf(x=0,loc=0,scale=1)
+print(pdf_val)
+
+'''from scipy import signal
+t=np.linespace(0,1,500)
+...'''

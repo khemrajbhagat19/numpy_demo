@@ -1,0 +1,12 @@
+import pandas as p
+df=p.DataFrame({'col1':[1,2,3,4],'col2':[444,555,666,777],'col3':['abc','def','ghi','xyz']})
+df.head()
+print(df['col2'].unique())
+
+print(df['col2'].nunique())
+
+print(df.columns)
+print(df.index)
+
+print(df.sort_values(by='col2'))
+print(df.isnull)

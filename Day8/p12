@@ -1,0 +1,5 @@
+import numpy as np
+import pandas as p
+
+df=p.read_excel("TEXT1")
+print(df)

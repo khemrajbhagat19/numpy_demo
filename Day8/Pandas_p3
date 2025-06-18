@@ -1,0 +1,11 @@
+import numpy as np
+import pandas as p
+
+ser1=p.Series([1,2,3,4],index=['USA','Germany','USSR','Japan'])
+print(ser1)
+
+ser2=p.Series([1,2,3,4],index=['USA','Germany','Itlay','Japan'])
+print(ser2)
+
+print(ser1['USA'])
+print(ser1+ser2)

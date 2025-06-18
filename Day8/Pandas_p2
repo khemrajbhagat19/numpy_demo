@@ -1,0 +1,12 @@
+import numpy as np
+import pandas as p
+label=['a','b','c']
+list=[1,2,3,4,5]
+arr=([[1,2],[2,3],[3,4]])
+'''
+print(p.Series(arr))'''
+
+'''print(p.Series(arr,label))'''
+
+
+print(p.Series([sum,print,len]))

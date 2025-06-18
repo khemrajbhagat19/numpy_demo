@@ -1,0 +1,11 @@
+import numpy as np
+import pandas as p
+
+label=['a','b','c']
+list=[1,2,3,4,5]
+
+print(p.Series(data=list))
+print(p.Series(data=label))
+
+print(p.Series(data=(list,label)))
+

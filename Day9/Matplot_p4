@@ -1,0 +1,17 @@
+from tkinter import Y
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.linspace(0,5,11)
+y=x**2
+
+
+'''plt.scatter(x,y)
+print(plt.show())'''
+
+# Histogarm
+'''from random import sample 
+data=sample(range(1,1000),100)
+plt.hist(data)
+print(plt.show())'''
+

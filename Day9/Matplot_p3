@@ -1,0 +1,73 @@
+from tkinter import Y
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.linspace(0,5,11)
+y=x**2
+
+'''plt.plot(x,y,'r')
+plt.xlabel('X-Axis')
+plt.ylabel("Y-Axis")
+plt.title("String Title")
+print(plt.show()) '''
+
+'''plt.subplot(1,2,1)
+plt.plot(x,y,'r--')
+plt.subplot(1,2,2)
+plt.plot(y,x,'g*--')
+print(plt.show()) '''
+
+'''fig=plt.figure() # create figure
+axes=fig.add_axes([0.1,0.1,0.8,0.8]) # add axes
+axes.plot(x,y,'b')
+axes.set_xlabel('X-Axis')
+plt.ylabel("Y-Axis")
+plt.title("String Title")
+print(plt.show()) '''
+
+# create blank canvas
+'''fig=plt.figure()
+axes1=fig.add_axes([0.1,0.1,0.8,0.8])
+axes1.plot(x,y,'b')
+axes1.set_xlabel('X1-Axis')
+axes1.set_ylabel('Y1-Axis')
+axes1.set_title('a1')
+
+axes2=fig.add_axes([0.2,0.5,0.4,0.3])
+axes2.plot(x,y,'b')
+axes2.plot(x,y,'b')
+axes2.set_xlabel('X2-Axis')
+axes2.set_ylabel('Y2-Axis')
+axes2.set_title('a2')
+print(plt.show())'''
+
+
+#saving figures
+'''fig.savefig("NAME") # or
+fig.savefig("NAME",dpi=100)'''
+
+
+# legends
+fig=plt.figure()
+
+ax=fig.add_axes([0,0,1,1])
+
+ax.plot(x,x**2,label='x**2')
+ax.plot(x,x**3,label='x**3')
+'''ax.legend()
+print(plt.show())'''
+
+'''ax.legend(loc=1)
+print(plt.show())'''
+
+'''ax.legend(loc=2)
+print(plt.show())'''
+
+'''ax.legend(loc=3)
+print(plt.show())'''
+
+ax.legend(loc=4)
+print(plt.show())
+
+
+

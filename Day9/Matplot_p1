@@ -1,0 +1,15 @@
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+xcor=np.array([5,8,7,10,2,6])
+ycor=np.array([15,20,25,80,71,95])
+plt.plot(xcor,ycor)
+print(plt.show()) 
+
+# without x coordinates
+# xcor=np.array([5,8,7,10,2,6])
+'''ycor=np.array([15,20,25,80,71,95])
+plt.plot(ycor) # x cord is taken from 0 by default
+print(plt.show())'''
+

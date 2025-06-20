@@ -1,0 +1,9 @@
+import requests
+import bs4
+
+
+response=requests.get("https://www.cricbuzz.com/live-cricket-scores/105762/eng-vs-ind-1st-test-india-tour-of-england-2025")
+print(response)
+print(response.text)
+#print(response.content)
+#print(response.status_code)

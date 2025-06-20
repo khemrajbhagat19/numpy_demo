@@ -1,0 +1,10 @@
+import requests
+import bs4
+
+from fake_useragent import UserAgent
+obj=UserAgent()
+header={'user-agent':obj.chrome}
+response=requests.get("https://www.cricbuzz.com/live-cricket-scores/105762/eng-vs-ind-1st-test-india-tour-of-england-2025",header)
+
+for key,value in response.headers.items():
+    print(f"{key}-->{value}")
